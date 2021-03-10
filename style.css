@@ -62,6 +62,7 @@ h1{
   text-decoration: none;
   color: #ffffff;
   margin: 120px 0;
+  display: block;
 }
 .navigation--wrapper{
   background: #5474fd;
