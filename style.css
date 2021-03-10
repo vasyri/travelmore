@@ -1,77 +1,91 @@
-@font-face{
+@font-face {
   font-family: MyriadPro;
-  src:url("fonts/Myriad Pro Regular.ttf") format("truetype");
+  src: url("fonts/Myriad Pro Regular.ttf") format("truetype");
   font-weight: 400;
 }
-body{
+body {
   margin: 15px;
   color: #ffffff;
-  font-family: 'Aleo', serif;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Aleo", serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-
 }
-.header{
-  background: linear-gradient( rgba(18,18,18,0.2), rgba(0,0,0,0.2)), url(img/pexels-photo-131743.png) no-repeat;
+.header {
+  background: linear-gradient(rgba(18, 18, 18, 0.2), rgba(18, 18, 18, 0.2)),
+    url(img/pexels-photo-131743.png) no-repeat;
   background-size: cover;
-  padding: 265px 0 135px; 
+  padding: 265px 0 135px;
 }
-.header--wrapper{
+.header--wrapper {
   width: 100%;
   max-width: 1110px;
   text-align: center;
   margin: 0 auto;
 }
-h1{
+h1 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 3em;
   margin: 0 0 5px;
 }
-.header--wrapper > p{
+.header--wrapper > p {
   font-family: MyriadPro;
   font-weight: 400;
   font-size: 1.375em;
   letter-spacing: 0.31em;
   margin: 0;
 }
-.input__container{
+.input__container {
   max-width: 650px;
   width: 100%;
   margin: 0 auto;
-  background:#ffffff;
+  background: #ffffff;
+  padding: 2px;
+  box-sizing: border-box;
+  font-size: 0;
 }
-.input__container > input{
+.input__container > input {
   border: none;
   outline: none;
-  max-width: 500px;
+  max-width: 496px;
   width: 100%;
+  padding: 0 50px;
+  vertical-align: middle;
+  box-sizing: border-box;
   text-align: center;
-  padding: 25px 0;
 }
-.input__container > button{
-  font-family: 'Aleo', serif;
+.input__container > button {
+  font-family: "Aleo", serif;
   border: none;
   background-color: #5474fd;
   color: #ffffff;
+  vertical-align: middle;
+  max-width: 150px;
+  width: 100%;
+  padding: 20px 0;
 }
-.input__container > button > img{
-  padding: 17px 0;
+.input__container > button > img,
+.input__container > button > span {
+  vertical-align: middle;
 }
-.header__scroll{
+.header__scroll {
   text-decoration: none;
   color: #ffffff;
   margin: 120px 0;
   display: block;
 }
-.navigation--wrapper{
+.header__scroll::after {
+  content: url("img/arrow-down.png");
+  display: block;
+  margin-top: 15px;
+}
+.navigation--wrapper {
   background: #5474fd;
   width: 100%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.5em;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  
 }
