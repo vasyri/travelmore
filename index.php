@@ -10,7 +10,7 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css?v=1<? echo date(DATE_RFC822) ?>">
   </head>
     <body>
       <!-- Header  -->
@@ -18,11 +18,11 @@
         <div class="header--wrapper"> 
           <h1>Bhromaon</h1>
           <p>Safe Travel Anywhere</p>
-          <div class="input__container">
+          <form class="input__container">
             <input type="text" placeholder="Search Your Travel Destination">
-            <button>Search <img src="img/search.png" alt="search"></button>
-          </div>
-          <a class="header__scroll" href="#"> Scroll down</a>
+            <button type="submit"><span>Search</span> <img src="img/search.svg" alt="search"></button>
+          </form>
+          <a class="header__scroll" href="#">Scroll down</a>
         </div>   
       </header>
       <!-- Navi -->
