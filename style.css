@@ -9,24 +9,32 @@ body{
   font-family: 'Aleo', serif;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-
+  line-height: 26px;
 }
-.header{
-  background: linear-gradient( rgba(18,18,18,0.2), rgba(0,0,0,0.2)), url(img/pexels-photo-131743.png) no-repeat;
-  background-size: cover;
-  padding: 265px 0 135px; 
+h2{
+  font-family: 'Aleo', serif;
+  font-size: 2.25em;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 0;
 }
-.header--wrapper{
+.content-wrapper{
   width: 100%;
   max-width: 1110px;
-  text-align: center;
   margin: 0 auto;
+}
+.header{
+  background: linear-gradient( rgba(18,18,18,0.2), rgba(18,18,18,0.2)), url(img/pexels-photo-131743.png) no-repeat;
+  background-size: cover;
+  padding: 265px 0 135px; 
+  text-align: center;
 }
 h1{
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 3em;
-  margin: 0 0 5px;
+  margin: 0 0 15px;
+  line-height: 0.54;
 }
 .header--wrapper > p{
   font-family: MyriadPro;
@@ -38,31 +46,46 @@ h1{
 .input__container{
   max-width: 650px;
   width: 100%;
-  margin: 0 auto;
+  margin: 50px auto 0;
   background:#ffffff;
+  box-sizing: border-box;
+  font-size: 0;
+  padding: 2px;
 }
 .input__container > input{
+  font-size: 14px;
+  letter-spacing: 0.2em;
   border: none;
   outline: none;
-  max-width: 500px;
+  max-width: 496px;
   width: 100%;
-  text-align: center;
-  padding: 25px 0;
+  padding: 25px 110px;
+  box-sizing: border-box;
+
 }
 .input__container > button{
+  font-size: 14px;
+  letter-spacing: 0.1em;
   font-family: 'Aleo', serif;
   border: none;
   background-color: #5474fd;
   color: #ffffff;
+  padding: 23px 15px 23px 35px;
+  text-transform: uppercase;
 }
 .input__container > button > img{
-  padding: 17px 0;
+  vertical-align: middle;
+  padding-left: 15px;
 }
 .header__scroll{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 0.2em;
   text-decoration: none;
   color: #ffffff;
-  margin: 120px 0;
+  margin: 120px 0 0;
   display: block;
+
 }
 .navigation--wrapper{
   background: #5474fd;
@@ -70,8 +93,236 @@ h1{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 700;
-  line-height: 26px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  
+}
+.navigation--wrapper > p{
+  display: inline-block;
+  margin: 0;
+  padding: 30px 425px 30px 330px;
+}
+nav{
+  display: inline-block;
+}
+.navigation > a{
+  font-family: 'Aleo', serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #ffffff;
+  padding-right: 40px;
+}
+.section__why{
+  background: linear-gradient( rgba(51,51,51,0.9), rgba(51,51,51,0.9)), url("img/sectionwhy.jpg") no-repeat;
+  background-size: cover;
+}
+.Why--wrapper.content-wrapper{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 120px 0;
+}
+.left{  
+  flex-basis: 50%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+.left > h2{
+  margin: 85px 0 50px;
+}
+.left > p{
+  margin: 0;
+  font-weight: 100;
+}
+.left > p:last-of-type{
+  margin-top: 25px;
+}
+.why_button{
+  text-transform: uppercase;
+  background: #5474fd;
+  display: inline-block;
+  max-width: 225px;
+  width: 100%;
+  font-family: 'Aleo', serif;
+  font-size: 1em;
+  letter-spacing: 0.075em;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 35px;
+}
+.right{ 
+  flex-basis: 50%;
+  text-align: center;
+}
+.img{
+  font-size: 0;
+  line-height: 0;
+}
+.why_house.img{
+  margin-bottom: 5px;
+}
+.why_mount.img{
+  text-align: right;
+}
+.hiw{
+  background: #333333;
+}
+.hiw--wrapper.content-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 170px 0 120px;
+  text-align: center;
+  position: relative;
+  z-index: 100; 
+}
+.hiw__dotes{
+  position: absolute;
+  transform: translate(0,-50px);
+  z-index: 1;
+}
+.hiw--wrapper.content-wrapper > div > h2{
+  margin-top: 30px;
+}
+.hiw_select.centered{
+  margin: 0 170px;
+}
+.hiw_item{
+  position: relative;
+  z-index: 100;
+}
+.spain__first{
+  background: url("img/spain_first.png") no-repeat;
+  background-size: cover;
+  padding: 230px 0 100px;
+}
+
+.spain__second{
+  background: url("img/spain_second.png") no-repeat;
+  background-size: cover;
+  padding: 230px 0 100px;
+}
+.spain{
+  max-width: 540px;
+  width: 100%;
+  background: #2c2728;
+  opacity: 0.9; 
+  padding: 50px 30px;
+}
+.spain.second{
+  position: relative;
+  right: -50%;
+}
+.spain > span{
+ font-size: 1.25em;
+ letter-spacing: 0.075em;
+ font-weight: 200;
+}
+.spain > h3{
+  font-size: 1.25em;
+  margin: 30px 0;
+  letter-spacing: 0;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.spain > p{
+  font-size: 1em;
+  margin: 0;
+  letter-spacing: 0;
+  font-weight: 200;
+}
+.spain__button{
+  background: #5474fd;
+  max-width: 225px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Aleo', serif;
+  font-size: 1em;
+  letter-spacing: 0.075em;
+  padding: 24px 65px;
+  margin-top: 50px;
+}
+.wots{
+  background: linear-gradient( rgba(35,35,35,0.9), rgba(35,35,35,0.9)), url("img/wots_bg.png");
+  background-size: cover;
+}
+.wots--wrapper.content-wrapper{
+  padding: 120px 0 200px;
+}
+.wots--wrapper.content-wrapper > h2{
+  margin-bottom: 95px;
+  text-align: center;
+}
+.wots_sumon{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wots_sumon > img{
+margin-right: 60px;
+}
+.sumon__text{
+  flex-direction: column;
+}
+.sumon__text > h3{
+  font-size: 1.25em;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin: 35px 0 0;
+}
+.sumon__text > p{
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 0;
+  margin: 0;
+}
+.fas.fa-quote-left{
+ color: #5474fd;
+ margin-top: 35px;
+} 
+.footer{
+  background: #232323;
+  padding: 120px 0 50px;
+}
+.footer-wrapper.content-wrapper{
+  text-align: center;
+}
+.footer-wrapper.content-wrapper > p{
+  margin: 0 0 15px;
+}
+.footer__social{
+  margin-top: 30px;
+}
+.footer__social > i{
+  padding-right: 25px;
+}
+.fab.fa-facebook-f:hover{
+  color: #3b5998;
+  cursor:pointer;
+  transition: 0.3s;
+}
+.fab.fa-twitter:hover{
+  color: #1DA1F2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fab.fa-linkedin-in:hover{
+  color: #2867B2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fab.fa-youtube:hover{
+  color:#FF0000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fab.fa-pinterest:hover{
+  color: #E60023;
+  cursor: pointer;
+  transition: 0.3s;
 }
