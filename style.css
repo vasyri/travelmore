@@ -294,6 +294,15 @@ margin-right: 60px;
 }
 .footer-wrapper.content-wrapper > p{
   margin: 0 0 15px;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+.footer-wrapper.content-wrapper > span{
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
 }
 .footer__social{
   margin-top: 30px;
