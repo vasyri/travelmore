@@ -467,10 +467,31 @@ width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
+  .content-wrapper{
+    padding: 60px 0 25px;
+  }
+  h1{
+    font-size: 2em;
+  }
+  .header--wrapper > p{
+    font-size: 1.2em;
+  }
   .left{
     padding: 0 15px;
   }
   .navigation--wrapper > nav{
     padding-bottom: 20px;
+  }
+  .spain__first{
+    padding: 100px 0 50px;
+  }
+  .spain__second{
+    padding: 100px 0 50px;
+  }
+  .wots--wrapper.content-wrapper{
+    padding: 100px 0 50px;
+  }
+  .footer{
+    padding: 50px 0 50px;
   }
 }
