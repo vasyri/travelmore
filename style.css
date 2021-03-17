@@ -35,6 +35,8 @@ h1{
   font-size: 3em;
   margin: 0 0 15px;
   line-height: 0.54;
+}.header--wrapper{
+  padding: 0 25px;
 }
 .header--wrapper > p{
   font-family: MyriadPro;
@@ -53,7 +55,7 @@ h1{
   padding: 2px;
 }
 .input__container > input{
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.2em;
   border: none;
   outline: none;
@@ -64,7 +66,7 @@ h1{
 
 }
 .input__container > button{
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.1em;
   font-family: 'Aleo', serif;
   border: none;
@@ -72,6 +74,7 @@ h1{
   color: #ffffff;
   padding: 23px 15px 23px 35px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .input__container > button > img{
   vertical-align: middle;
@@ -144,7 +147,7 @@ nav{
 }
 .why_button{
   text-transform: uppercase;
-  background: #5474fd;
+  background: linear-gradient(45deg, #496bfe 35%,#5474fd 35%,#5474fd 100%);
   display: inline-block;
   max-width: 225px;
   width: 100%;
@@ -152,10 +155,10 @@ nav{
   font-size: 1em;
   letter-spacing: 0.075em;
   text-align: center;
-  padding: 25px 0;
+  padding: 17px 0;
   margin-top: 35px;
 }
-.right{ 
+.right{
   flex-basis: 50%;
   text-align: center;
 }
@@ -174,9 +177,8 @@ nav{
 }
 .hiw--wrapper.content-wrapper{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 170px 0 120px;
+  padding: 100px 0 120px;
   text-align: center;
   position: relative;
   z-index: 100; 
@@ -189,8 +191,19 @@ nav{
 .hiw--wrapper.content-wrapper > div > h2{
   margin-top: 30px;
 }
+.hiw__search{
+  max-width: 216px;
+  width: 100%;
+}
+
 .hiw_select.centered{
+  max-width: 216px;
+  width: 100%;
   margin: 0 170px;
+}
+.hiw_book{
+  max-width: 216px;
+  width: 100%;
 }
 .hiw_item{
   position: relative;
@@ -210,8 +223,7 @@ nav{
 .spain{
   max-width: 540px;
   width: 100%;
-  background: #2c2728;
-  opacity: 0.9; 
+  background: linear-gradient( rgba(35,35,35,0.9), rgba(35,35,35,0.9));
   padding: 50px 30px;
 }
 .spain.second{
@@ -237,15 +249,16 @@ nav{
   font-weight: 200;
 }
 .spain__button{
-  background: #5474fd;
+  background: linear-gradient(45deg, #496bfe 35%,#5474fd 35%,#5474fd 100%);
   max-width: 225px;
   width: 100%;
   text-align: center;
   font-family: 'Aleo', serif;
   font-size: 1em;
   letter-spacing: 0.075em;
-  padding: 24px 65px;
+  padding: 25px 60px;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 .wots{
   background: linear-gradient( rgba(35,35,35,0.9), rgba(35,35,35,0.9)), url("img/wots_bg.png");
@@ -261,29 +274,36 @@ nav{
 .wots_sumon{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
-.wots_sumon > img{
-margin-right: 60px;
+.wots__img{
+max-width: 400px;
+width: 100%;
+}
+.wots__img > img{
+  width: 100%;
 }
 .sumon__text{
-  flex-direction: column;
+  background: #333333;
+  padding: 30px 40px;
+  max-width: 665px;
+  width: 100%;
 }
 .sumon__text > h3{
   font-size: 1.25em;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: uppercase;
-  margin: 35px 0 0;
+  margin: 0;
 }
 .sumon__text > p{
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 200;
   letter-spacing: 0;
   margin: 0;
 }
 .fas.fa-quote-left{
  color: #5474fd;
- margin-top: 35px;
 } 
 .footer{
   background: #232323;
@@ -307,7 +327,11 @@ margin-right: 60px;
 .footer__social{
   margin-top: 30px;
 }
-.footer__social > i{
+.footer__social > a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__social > a > i{
   padding-right: 25px;
 }
 .fab.fa-facebook-f:hover{
@@ -334,4 +358,119 @@ margin-right: 60px;
   color: #E60023;
   cursor: pointer;
   transition: 0.3s;
+}
+@media screen and (max-width: 1550px) {
+  .navigation--wrapper > p {
+    padding: 30px 250px 30px 130px;
+}
+}
+@media screen and (max-width: 1200px) {
+  .navigation--wrapper > p {
+    padding: 30px 135px 30px 65px;
+  }
+  .right{
+    display: flex;
+   flex-direction: row;
+  }
+  .why_house.img{
+    margin: 25px 10px 0 0;
+  }
+  .Why--wrapper.content-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .hiw--wrapper.content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hiw__dotes{
+    display: none;
+  }
+  .hiw--wrapper.content-wrapper > div > h2{
+    margin: 20px 0;
+  }
+  .hiw--wrapper.content-wrapper > .hiw_book.hiw_item > h2{
+    margin: 20px 0 0;
+  }
+  .spain{
+    margin: 0 auto;
+  }
+  .spain.second{
+    position: static;
+  }
+  .wots_sumon{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sumon__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navigation > a {
+    padding-right: 20px;
+  }
+  .navigation--wrapper > p {
+    padding: 20px 80px 20px 25px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .navigation > a {
+    padding-right: 10px;
+  }
+  .navigation--wrapper > p {
+    padding: 20px 45px 20px 15px;
+  }
+}
+@media screen and (max-width: 750px) {
+  body{
+    font-size: 12px;
+  }
+  .navigation--wrapper > p{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .navigation--wrapper > nav{
+    padding-bottom: 20px;
+  }
+  .navigation{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .right{
+    flex-direction: column;
+    max-width: 415px;
+    width: 100%;
+  }
+  .why_mount.img{
+    margin-top: 10px;
+    text-align: start;
+    max-width: 415px;
+    width: 100%;
+  }
+  .why_mount_photo{
+    max-width: 415px;
+    width: 100%;
+  }
+  .why_house.img{
+    max-width: 415px;
+    width: 100%;
+  }
+  .why_house_photo{
+    max-width: 415px;
+    width: 100%;
+  }
+  .sumon__text{
+    padding: 15px 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .left{
+    padding: 0 15px;
+  }
+  .navigation--wrapper > nav{
+    padding-bottom: 20px;
+  }
 }
