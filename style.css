@@ -253,44 +253,55 @@ nav {
   background: linear-gradient(rgba(35, 35, 35, 0.9), rgba(35, 35, 35, 0.9)),
     url("img/wots_bg.png");
   background-size: cover;
+  padding: 120px 15px 200px;
+}
+.wots > h2{
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 94px;
 }
 .wots--wrapper.content-wrapper {
-  padding: 120px 0 200px;
+  background: #333333;
+  max-width: 1110px;
+  margin: 0 auto;
+  font-size: 0;
+  
 }
-.wots--wrapper.content-wrapper > h2 {
+.wots> h2 {
   margin-bottom: 95px;
   text-align: center;
 }
-.wots_sumon {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
 .wots__img {
-  max-width: 400px;
-  width: 100%;
+  max-width: 445px;
+  display: inline-block;
 }
 .wots__img > img {
   width: 100%;
+  vertical-align: bottom;
 }
 .sumon__text {
-  background: #333333;
-  padding: 30px 40px;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.625;
   max-width: 665px;
-  width: 100%;
+  vertical-align: top; 
+  padding: 50px 40px 0;
 }
 .sumon__text > h3 {
   font-size: 1.25em;
   font-weight: 400;
-  letter-spacing: 0;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 1.3em;
+  line-height: 1.3;
 }
 .sumon__text > p {
   font-size: 1em;
   font-weight: 200;
-  letter-spacing: 0;
   margin: 0;
+}
+.sumon__text > p > sup{
+  font-size: 1em;
 }
 .fas.fa-quote-left {
   color: #5474fd;
@@ -399,6 +410,26 @@ nav {
     text-align: center;
   }
 }
+@media screen and (max-width: 1170px) {
+  .wots {
+    padding: 60px 15px;
+  }
+  .wots > h2 {
+    margin-bottom: 40px;
+  }
+  .wots--wrapper.content-wrapper {
+    text-align: center;
+    max-width: 665px;
+  }
+  .wots__img {
+    width: 100%;
+    max-width: none;
+  }
+  .sumon__text {
+    padding: 30px 20px;
+    text-align: left;
+  }
+}
 @media screen and (max-width: 1000px) {
   .navigation > a {
     padding-right: 20px;
@@ -420,12 +451,23 @@ nav {
 }
 @media screen and (max-width: 750px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .header{
+    padding: 132px 0 67px;
+  }
+  .input__container > input{
+    padding: 20px 40px;
+  }
+  .input__container > button {
+    display: block;
+    width: 100%;
   }
   .navigation--wrapper > p {
     display: block;
     margin: 0 auto;
     text-align: center;
+    padding: 20px 0;
   }
   .navigation--wrapper > nav {
     padding-bottom: 20px;
@@ -458,8 +500,8 @@ nav {
     max-width: 415px;
     width: 100%;
   }
-  .sumon__text {
-    padding: 15px 20px;
+  .no-br500px{
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
@@ -472,19 +514,19 @@ nav {
   .header--wrapper > p {
     font-size: 1.2em;
   }
+  .navigation--wrapper > nav {
+    padding-bottom: 20px;
+  }
   .left {
     padding: 0 15px;
   }
-  .navigation--wrapper > nav {
-    padding-bottom: 20px;
+  .right{
+    padding: 0 15px;
   }
   .spain__first {
     padding: 100px 0 50px;
   }
   .spain__second {
-    padding: 100px 0 50px;
-  }
-  .wots--wrapper.content-wrapper {
     padding: 100px 0 50px;
   }
   .footer {
